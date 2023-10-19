@@ -6,7 +6,7 @@
   
 ## Features
 
-- LLM with command-line user input
+- LLM with command-line user input and voice sythensizer
 
 ## Tools
 
