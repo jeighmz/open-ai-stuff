@@ -16,6 +16,18 @@
 ### OpenAI API
 - **URL**: [OpenAI API Documentation](https://platform.openai.com/docs/api-reference)
 
+### Libraries Used
+
+- `requests`: For making HTTP requests.
+- `json`: For handling JSON data.
+- `dotenv`: To manage environment variables.
+- `os`: For operating system dependent functionalities.
+- `openai`: For interacting with OpenAI's API.
+- `base64`: For Base64 encoding and decoding.
+- `IPython Audio`: For audio playback in Jupyter notebooks.
+
+Make sure to install these packages before running the code.
+
 
 ## Quick Note on API Keys
 
