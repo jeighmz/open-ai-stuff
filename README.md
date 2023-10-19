@@ -21,4 +21,3 @@
 
 - We use `.env` files for API keys.
 - Don't upload your `.env` file. Add it to `.gitignore`.
-- Keep your keys safe. Simple as that.
