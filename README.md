@@ -28,5 +28,5 @@
 
 ## Quick Note on API Keys
 
-- We use `.env` files for API keys.
+- We use a `.env` file for API keys.
 - Don't upload your `.env` file. Add it to `.gitignore`.
