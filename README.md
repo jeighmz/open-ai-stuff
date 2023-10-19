@@ -16,3 +16,9 @@
 ### OpenAI API
 - **URL**: [OpenAI API Documentation](https://platform.openai.com/docs/api-reference)
 
+
+## Quick Note on API Keys
+
+- We use `.env` files for API keys.
+- Don't upload your `.env` file. Add it to `.gitignore`.
+- Keep your keys safe. Simple as that.
