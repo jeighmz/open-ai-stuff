@@ -71,14 +71,11 @@
 
 ## Tools
 
-### Langchain
-- Main library for handling various aspects of conversational models, text splitting, vector storage, and more.
-
-### OpenAI API
-- **URL**: [OpenAI API Documentation](https://platform.openai.com/docs/api-reference)
-- Used for language model embeddings and chat functionalities.
+### Langchain + OpenAI API
+- **URL**: [Langchain RAG Agent Documentation](https://python.langchain.com/docs/use_cases/question_answering/conversational_retrieval_agents)
 
 ### FAISS
+- **URL**: [FAISS Documentation](https://faiss.ai/index.html)
 - Library for efficient similarity search and clustering of dense vectors.
 
 ## Libraries and Modules Used
