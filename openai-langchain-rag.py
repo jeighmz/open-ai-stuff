@@ -1,6 +1,5 @@
-from langchain.document_loaders import TextLoader
-from langchain.document_loaders import WebBaseLoader
 
+from langchain.document_loaders import WebBaseLoader
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.vectorstores import FAISS
 from langchain.embeddings import OpenAIEmbeddings
@@ -11,25 +10,22 @@ from langchain.chat_models import ChatOpenAI
 
 llm = ChatOpenAI(temperature = 0)
 
-doc = 'https://waitbutwhy.com/2017/04/neuralink.html'
+doc = 'https://www.atomvm.net//'
 loader = WebBaseLoader(doc)
-data = loader.load()
-
-
 documents = loader.load()
+
 text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
 texts = text_splitter.split_documents(documents)
 embeddings = OpenAIEmbeddings()
 
 db = FAISS.from_documents(texts, embeddings)
 
-
 retriever = db.as_retriever()
 
 tool = create_retriever_tool(
     retriever, 
-    "search_blog",
-    "Searches and returns documents regarding the blog."
+    "search_document",
+    "Searches and returns documents regarding the query."
 )
 tools = [tool]
 
@@ -42,4 +38,3 @@ while True:
     if user_input == "exit":
         break
     result = agent_executor({"input": user_input})
-    #print("Chatbot: ", result["output"])
