@@ -39,7 +39,7 @@
 
 ## Features
 
-- Interactive command-line chatbot with Retrieval Augmented Generation (RAG) using Langchain and OpenAI
+- Interactive command-line chatbot on documents using Langchain and OpenAI
 
 ## Tools
 
@@ -59,5 +59,44 @@
 - `langchain.embeddings.OpenAIEmbeddings`: For OpenAI-based text embeddings.
 - `langchain.vectorstores.Chroma`: For vector storage.
 - `langchain.text_splitter.RecursiveCharacterTextSplitter`: For splitting text into smaller chunks.
+
+
+## Python Script
+
+- **Name**: `openai-langchain-rag.py`
+
+## Features
+
+- An interactive chatbot utilizing Langchain agents and OpenAI for smarter Retrieval Augmented Generation (RAG) and document searching.
+
+## Tools
+
+### Langchain
+- Main library for handling various aspects of conversational models, text splitting, vector storage, and more.
+
+### OpenAI API
+- **URL**: [OpenAI API Documentation](https://platform.openai.com/docs/api-reference)
+- Used for language model embeddings and chat functionalities.
+
+### FAISS
+- Library for efficient similarity search and clustering of dense vectors.
+
+## Libraries and Modules Used
+
+- `langchain.document_loaders.WebBaseLoader`: For fetching and loading web-based documents.
+- `langchain.text_splitter.CharacterTextSplitter`: For splitting text based on characters, with a specified chunk size and overlap.
+- `langchain.vectorstores.FAISS`: For efficient similarity search in dense vector spaces.
+- `langchain.embeddings.OpenAIEmbeddings`: For generating and handling OpenAI-based text embeddings.
+- `langchain.agents.agent_toolkits.create_retriever_tool`: For creating a tool that retrieves information based on user queries.
+- `langchain.agents.agent_toolkits.create_conversational_retrieval_agent`: For generating a conversational agent that can perform retrieval based on the user's input.
+- `langchain.chat_models.ChatOpenAI`: For handling chat functionalities using OpenAI's GPT models.
+
+## Usage
+
+The script starts by initializing a language model (`llm`) and specifying a web document (`doc`) to be fetched and processed. It then loads the document and splits it into smaller chunks, which are embedded into a vector space using OpenAI embeddings. These embeddings are stored in a FAISS database (`db`), which is used to retrieve relevant information when the user interacts with the chatbot.
+
+To interact with the chatbot, simply run the script and input your queries in the command line interface.
+
+
 
 
