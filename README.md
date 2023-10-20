@@ -60,7 +60,7 @@
 - `langchain.vectorstores.Chroma`: For vector storage.
 - `langchain.text_splitter.RecursiveCharacterTextSplitter`: For splitting text into smaller chunks.
 
-
+___
 ## Python Script
 
 - **Name**: `openai-langchain-rag.py`
@@ -78,7 +78,7 @@
 - **URL**: [FAISS Documentation](https://faiss.ai/index.html)
 - Library for efficient similarity search and clustering of dense vectors.
 
-## Libraries and Modules Used
+### Libraries and Modules Used
 
 - `langchain.document_loaders.WebBaseLoader`: For fetching and loading web-based documents.
 - `langchain.text_splitter.CharacterTextSplitter`: For splitting text based on characters, with a specified chunk size and overlap.
