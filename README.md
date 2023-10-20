@@ -39,7 +39,7 @@
 
 ## Features
 
-- Interactive chatbot with conversational retrieval using Langchain and OpenAI.
+- Interactive chatbot with conversational retrieval augmented generation (RAG) and memory using Langchain and OpenAI.
 
 ## Tools
 
