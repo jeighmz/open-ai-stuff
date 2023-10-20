@@ -6,6 +6,8 @@ from langchain.embeddings import OpenAIEmbeddings
 from langchain.vectorstores import Chroma
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 
+## Mainly works with markdown styled web pages (e.g. blog posts). 
+## web-scraping coming soon...
 
 loader = WebBaseLoader("https://lilianweng.github.io/posts/2022-09-08-ntk/")
 data = loader.load()
