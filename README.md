@@ -7,7 +7,6 @@
 ## Features
 
 - LLM with command-line user input and voice sythensizer
-![Screenshot 2023-10-19 at 7 53 58 PM](https://github.com/jeighmz/open-ai-stuff/assets/48871068/ab7bf79c-8ce9-425f-89b8-36c16c77e0e1)
 
 ## Tools
 
