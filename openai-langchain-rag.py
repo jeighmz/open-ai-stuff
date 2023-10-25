@@ -10,7 +10,7 @@ from langchain.chat_models import ChatOpenAI
 
 llm = ChatOpenAI(temperature = 0)
 
-doc = 'https://www.atomvm.net//'
+doc = 'https://arxiv.org/pdf/2310.11616.pdf'
 loader = WebBaseLoader(doc)
 documents = loader.load()
 
